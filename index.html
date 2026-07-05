@@ -1,166 +1,162 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Validación de certificados - Carlos Chavez Rojo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: "Segoe UI", Arial, sans-serif;
-      background-color: #f4f4f4;
-    }
+<meta charset="UTF-8">
+<title>Validación de Certificados</title>
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background:#f2f2f2;
+    margin:0;
+    padding:30px;
+}
 
-    .page-container {
-      max-width: 900px;
-      margin: 40px auto;
-      background: #ffffff;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-      border-radius: 10px;
-      overflow: hidden;
-    }
+.container{
+    max-width:1200px;
+    margin:auto;
+    background:#fff;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 2px 10px rgba(0,0,0,0.12);
+}
 
-    .top-banner {
-      background-color: #6b0f1a;
-      padding: 18px 20px;
-      text-align: center;
-    }
+.header{
+    background:#7a0012;
+    color:#fff;
+    text-align:center;
+    padding:28px;
+    font-size:42px;
+    font-weight:bold;
+    letter-spacing:1px;
+}
 
-    .top-banner h1 {
-      margin: 0;
-      color: #ffffff;
-      font-size: 30px;
-      font-weight: 700;
-      letter-spacing: 0.5px;
-    }
+.subtext{
+    text-align:center;
+    font-size:20px;
+    margin-top:35px;
+    color:#333;
+}
 
-    .content {
-      padding: 25px;
-    }
+.status{
+    width:fit-content;
+    margin:25px auto 10px auto;
+    background:#16a34a;
+    color:#fff;
+    padding:12px 35px;
+    border-radius:40px;
+    font-size:22px;
+    font-weight:bold;
+}
 
-    .subtitle {
-      text-align: center;
-      color: #374151;
-      margin-top: 0;
-      margin-bottom: 25px;
-      font-size: 16px;
-      line-height: 1.5;
-    }
+.content{
+    display:flex;
+    gap:40px;
+    padding:40px;
+    align-items:flex-start;
+}
 
-    .status-badge {
-      display: inline-block;
-      padding: 6px 14px;
-      border-radius: 999px;
-      background-color: #16a34a;
-      color: #ffffff;
-      font-size: 13px;
-      font-weight: 600;
-      margin-bottom: 20px;
-    }
+.data{
+    width:45%;
+}
 
-    .info-section {
-      margin-bottom: 25px;
-      color: #111827;
-      font-size: 15px;
-    }
+.item{
+    border-bottom:1px solid #ddd;
+    padding:18px 0;
+}
 
-    .info-row {
-      margin-bottom: 8px;
-    }
+.item span{
+    display:block;
+    font-size:18px;
+    color:#666;
+    margin-bottom:8px;
+    font-weight:bold;
+}
 
-    .info-label {
-      font-weight: 600;
-      color: #374151;
-    }
+.item strong{
+    font-size:20px;
+    color:#111;
+}
 
-    .info-value {
-      color: #111827;
-    }
+.preview{
+    width:55%;
+    text-align:center;
+}
 
-    .certificate-preview {
-      margin-top: 25px;
-      text-align: center;
-    }
+.preview img{
+    width:100%;
+    max-width:600px;
+    border:1px solid #ddd;
+    border-radius:10px;
+}
 
-    .certificate-preview h2 {
-      font-size: 18px;
-      color: #374151;
-      margin-bottom: 12px;
-    }
-
-    .certificate-preview img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 8px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-    }
-
-    .footer-note {
-      margin-top: 25px;
-      font-size: 12px;
-      color: #6b7280;
-      text-align: center;
-    }
-  </style>
+.footer{
+    background:#f7f7f7;
+    text-align:center;
+    padding:22px;
+    font-size:20px;
+    color:#444;
+    border-top:1px solid #ddd;
+}
+</style>
 </head>
 <body>
 
-  <div class="page-container">
+<div class="container">
 
-    <div class="top-banner">
-      <h1>Validación de certificados</h1>
+    <div class="header">
+        VALIDACIÓN DE CERTIFICADOS
+    </div>
+
+    <div class="subtext">
+        Los siguientes datos corresponden al registro del curso <strong>“APRENDIZAJE BASADO EN PROYECTOS EN LA NEM EN EDUCACIÓN PRIMARIA”</strong>.
+    </div>
+
+    <div class="status">
+        Estatus: VÁLIDO
     </div>
 
     <div class="content">
 
-      <p class="subtitle">
-        Los siguientes datos corresponden al registro del
-        <strong>Diplomado “Literacidad Crítica y Pedagogía por Proyectos desde la Nueva Escuela Mexicana”</strong>.
-      </p>
+        <div class="data">
 
-      <div style="text-align:center;">
-        <span class="status-badge">Estatus: VÁLIDO</span>
-      </div>
+            <div class="item">
+                <span>Nombre:</span>
+                <strong>EDUARDO MARTINEZ GARCIA</strong>
+            </div>
 
-      <div class="info-section">
-        <div class="info-row">
-          <span class="info-label">Nombre completo: </span>
-          <span class="info-value">CARLOS CHAVEZ ROJO</span>
+            <div class="item">
+                <span>CURP:</span>
+                <strong>MAGE931006HMCRRD04</strong>
+            </div>
+
+            <div class="item">
+                <span>Curso:</span>
+                <strong>APRENDIZAJE BASADO EN PROYECTOS EN LA NEM EN EDUCACIÓN PRIMARIA</strong>
+            </div>
+
+            <div class="item">
+                <span>Fecha:</span>
+                <strong>04/07/2026</strong>
+            </div>
+
+            <div class="item">
+                <span>Folio:</span>
+                <strong>42520714</strong>
+            </div>
+
         </div>
 
-        <div class="info-row">
-          <span class="info-label">CURP: </span>
-          <span class="info-value">CARC810607HMNHJR09</span>
+        <div class="preview">
+            <img src="constancia.jpg" alt="Constancia">
         </div>
-
-        <div class="info-row">
-          <span class="info-label">Diplomado: </span>
-          <span class="info-value">LITERACIDAD CRÍTICA Y PEDAGOGÍA POR PROYECTOS DESDE LA NUEVA ESCUELA MEXICANA</span>
-        </div>
-
-        <div class="info-row">
-          <span class="info-label">Fecha de término: </span>
-          <span class="info-value">03/07/2026</span>
-        </div>
-
-        <div class="info-row">
-          <span class="info-label">Folio: </span>
-          <span class="info-value">83797481</span>
-        </div>
-      </div>
-
-      <div class="certificate-preview">
-        <h2>Vista del certificado</h2>
-        <img src="constancia.jpg" alt="Constancia">
-      </div>
-
-      <p class="footer-note">
-        Documento digital para consulta y validación.
-      </p>
 
     </div>
-  </div>
+
+    <div class="footer">
+        Documento digital para consulta y validación.
+    </div>
+
+</div>
 
 </body>
 </html>
